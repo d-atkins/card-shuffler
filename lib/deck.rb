@@ -11,7 +11,7 @@ class Deck
 
   def list_cards
     @cards.map {|card| card.name}
-          .join(', ')
+          .join("\n")
   end
 
   def shuffle

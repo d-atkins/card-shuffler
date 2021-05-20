@@ -32,8 +32,7 @@ class CardTest < Minitest::Test
     assert_equal "", @deck.list_cards
 
     @deck.add_cards([@card1, @card2, @card3])
-
-    assert_equal "3 of Spades, Ace of Spades, Jack of Hearts", @deck.list_cards
+    assert_equal "3 of Spades\nAce of Spades\nJack of Hearts", @deck.list_cards
   end
 
   def test_it_can_shuffle_cards
