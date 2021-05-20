@@ -7,6 +7,7 @@ A `Deck` consists of a list of cards.
 The card shuffler was implemented as a method of `Deck`, called `shuffle`.
 
 The `Deck#shuffle` method is simply an invocation of the Ruby array method `shuffle!`
+
 I was debating coming up with my own implementation, but I think it's fair to argue that much of the Ruby skill set boils down to API knowledge. If I were to write my own implementation, I would do as follows:
 
 ```ruby
@@ -38,6 +39,8 @@ $ rake test
 ```
 
 The test suite is comprised of basic attribute and method tests.
+
 Since it's quite difficult to test the randomness of the shuffle method,
 the test for `shuffle` only checks that the deck is different after being shuffled.
+
 There is a small chance that the test will fail if the deck is shuffled back into the same order.
