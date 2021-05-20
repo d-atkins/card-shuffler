@@ -2,7 +2,7 @@ require 'minitest/autorun'
 require './lib/card'
 require './lib/deck'
 
-class CardTest < Minitest::Test
+class DeckTest < Minitest::Test
   def setup
     @card1 = Card.new({value: 3, suit: "Spades"})
     @card2 = Card.new({value: "Ace", suit: "Spades"})
