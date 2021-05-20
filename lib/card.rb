@@ -7,6 +7,12 @@ class Card
   end
 
   def name
-    "#{@value} of #{@suit}"
+    if @value.nil?
+      "#{@suit}"
+    elsif @suit.nil?
+      "#{@value}"
+    else
+      "#{@value} of #{@suit}"
+    end
   end
 end

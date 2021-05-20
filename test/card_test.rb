@@ -16,6 +16,11 @@ class CardTest < Minitest::Test
   end
 
   def test_it_has_a_name
+    card2 = Card.new({suit: "Joker"})
+    card3 = Card.new({value: 500})
+
     assert_equal "3 of Spades", @card.name
+    assert_equal "Joker", card2.name
+    assert_equal "500", card3.name
   end
 end
